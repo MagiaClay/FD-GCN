@@ -1,11 +1,10 @@
-# 2s-AGCN
-Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition in CVPR19
+# FD-GCN
+Feedback Directed Graph Convolutional Networks for Skeleton-Based Action Recognition
 
 # Note
 
 ~~PyTorch version should be 0.3! For PyTorch0.4 or higher, the codes need to be modified.~~ \
-Now we have updated the code to >=Pytorch0.4. \
-A new model named AAGCN is added, which can achieve better performance. 
+Now we have updated the code to >=Pytorch0.4. 
 
 # Data Preparation
 
