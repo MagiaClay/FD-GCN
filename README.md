@@ -24,7 +24,6 @@ Now we have updated the code to >=Pytorch0.4. \
              ...
            -samples_with_missing_skeletons.txt
 
-
 [https://github.com/shahroudy/NTURGB-D]: NTU-RGB+D
 [https://github.com/yysijie/st-gcn]: Skeleton-Kinetics
 
@@ -55,26 +54,17 @@ Then combine the generated scores with:
 
     `python ensemble.py` --datasets ntu/xview
 
-
 # Citation
 
 Please cite the following paper if you use this repository in your reseach.
 
-    @inproceedings{2sagcn2019cvpr,
-          title     = {Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition},
-          author    = {Lei Shi and Yifan Zhang and Jian Cheng and Hanqing Lu},
-          booktitle = {CVPR},
-          year      = {2019},
-    }
-
-    @article{shi_skeleton-based_2019,
-        title = {Skeleton-{Based} {Action} {Recognition} with {Multi}-{Stream} {Adaptive} {Graph} {Convolutional} {Networks}},
-        journal = {arXiv:1912.06971 [cs]},
-        author = {Shi, Lei and Zhang, Yifan and Cheng, Jian and LU, Hanqing},
-        month = dec,
-        year = {2019},
+    @inproceedings{fdgcn,
+          title     = {Feedback Directed Graph Convolutional Networks for Skeleton-Based Action Recognition},
+          author    = {Ran Ruixi and Yang Wenlu},
+          booktitle = {},
+          year      = {},
     }
 
 # Contact
 
-For any questions, feel free to contact: `lei.shi@nlpr.ia.ac.cn`
+For any questions, feel free to contact: `944295628@qq.com`
