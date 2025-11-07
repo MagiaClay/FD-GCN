@@ -30,7 +30,7 @@ Theoretical verification in Supplemental Material: ['Oversmooth' effect in Graph
 
 ## Details
 Overall:
-![Overall](resources\Overall.jpg)
+![Overall](\resources\Overall.jpg)
 
 Visaualize:
 ![Visualize](resources\highlights.jpg)
