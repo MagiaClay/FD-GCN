@@ -1,6 +1,42 @@
-# FD-GCN
+# Abstrct
 
-Feedback Directed Graph Convolutional Networks for Skeleton-Based Action Recognition in CVPR19
+Graph Convolutional Network (GCN) has achieved remarkable result in skeleton-based action recognition. In GCNs, multi-order information has shown notable improvement for recognition and the graph topology, which is the key to fusing and extracting representative features. 
+
+However, the GCN-based methods still face the following problems: 
+-  Nodes will have over-smooth problems in deep and complex networks. 
+- Lack of efficient methods to fuse data streams of different modalities. 
+
+In our work, we proposed a novel data-fusing method, Feedback Directed Graph Convolution (FD-GC), to dynamically construct diverse correlation matrices and effectively aggregate both joint and bone features in different hierarchical update state and utilize them as feedback loops to participate in aggregation respectively for both streams. Our methods significantly reduce the difficulty of modeling multi-streams features at a small parameter cost. Furthermore, the experimental results indicate FD-GC alleviates the over-smooth effect via the feedback mechanism, constructing stronger representation capabilities of fine-grained actions, and performs as well as most skeletal motion recognition algorithms on two large public datasets NTU RGB+D 60, NTU RGB+D 120 and Northwestern-UCLA.
+
+Highlights:
+- We propose a feedback directed graph convolution method FD
+GC, which can effectively construct the dynamic correlation be
+tween multi-stream data through feedback information, to effec
+tively aggregate and update features, and verified the effective
+ness of contribution of high-level feedback feature information.
+-  We construct a novel feedback directed graph convolutional net
+work FD-GCN to verify and visualize the effective representation 
+of motion information by directed topology, and reduce the influ
+ence of over-smooth on feature aggregation in deep networks at 
+a small parameter cost.
+- The extensive experimental result highlight the benefits of FD
+GC, which performs as well as most skeletal motion recognition 
+algorithms on two large public datasets NTU RGB+D 60, NTU 
+RGB+D 120 and Northwestern-UCLA.
+
+Access to our work: [FD-GCN: Feedback Directed Graph Convolutional Network for skeleton-based action recognition](https://www.sciencedirect.com/science/article/pii/S1524070325000530)
+
+Theoretical verification in Supplemental Material: ['Oversmooth' effect in Graph Convolutinal Networks](https://ars.els-cdn.com/content/image/1-s2.0-S1524070325000530-mmc1.pdf)
+
+## Details
+Overall:
+![Overall](resources\Overall.jpg)
+
+Visaualize:
+![Visualize](resources\highlights.jpg)
+
+Results:
+![Results](resources\results.jpg)
 
 # Note
 
@@ -50,20 +86,25 @@ To ensemble the results of joints and bones, run test firstly to generate the sc
 
     `python main.py --config ./config/nturgbd-cross-view/test_bone.yaml`
 
-Then combine the generated scores with:
 
-    `python ensemble.py` --datasets ntu/xview
 
 # Citation
 
 Please cite the following paper if you use this repository in your reseach.
 
-    @inproceedings{fdgcn,
-          title     = {Feedback Directed Graph Convolutional Networks for Skeleton-Based Action Recognition},
-          author    = {Ran Ruixi and Yang Wenlu},
-          booktitle = {},
-          year      = {},
-    }
+    @article{RAN2025101306,
+        title = {FD-GCN: Feedback Directed Graph Convolutional Network for skeleton-based action recognition},
+        journal = {Graphical Models},
+        volume = {142},
+        pages = {101306},
+        year = {2025},
+        issn = {1524-0703},
+        doi = {https://doi.org/10.1016/j.gmod.2025.101306},
+        url = {https://www.sciencedirect.com/science/article/pii/S1524070325000530},
+        author = {Ruixi Ran and Wenlu Yang},
+        keywords = {Skeleton-based action recognition, Graph neural network, Pattern recognition, Deep learning}
+        }
+    
 
 # Contact
 
